@@ -1,13 +1,16 @@
 ## 🕹️ Project Overview: Networked ASCII Battle Game (C Implementation)
 
-This project is a **multiplayer, text-based battle game** built using **TCP socket programming in C**, completed as part of **COMPSCI 3N03 (Computer Networks and Security)** at McMaster University.
+This project is a **multiplayer, text-based battle game** built using **TCP socket programming in C**.
 
-The goal of the assignment was to apply core networking concepts — such as TCP connections, concurrency, and real-time state synchronization — in a fun and interactive way by designing a **grid-based battle game** with simple commands.
+The goal of this project was to apply core networking concepts — such as TCP connections, concurrency, and real-time state synchronization — in a fun and interactive way by designing a **grid-based battle game** with simple commands.
 
 ---
 
 ## 🔗 How it Works:
 
+- To start the server, run the command in the file ./server 12345
+- To join a player to that server, run the command in the file ./client 127.0.0.1 12345. This will let you join the map (server) 12345 with it's players.
+- Can create multiple games at once by running the server file and creating another map. Example, ./server 56789
 - A **server** maintains a shared 5x5 ASCII grid and listens for up to **4 concurrent client connections**.
 - Each **client** connects via TCP and is assigned a player symbol (A, B, C, D).
 - Players interact with the game using **text-based commands** like:
