@@ -47,3 +47,7 @@ Game state (including player positions, HP, and obstacles) is broadcast to all c
 - Attacks reduce an opponent’s HP by 20.
 - A player is removed from the game when their HP reaches zero.
 - The server continuously updates all connected players with the current game state.
+
+
+  <img width="1170" alt="image" src="https://github.com/user-attachments/assets/c10a75c0-f6fd-4cb3-aad1-896f16fe1ae2" />
+
